@@ -1,0 +1,129 @@
+pwd
+ls
+man ls
+ls -l
+cd r
+cd repogit/
+cd ..
+ls
+ls -a -l
+pwd
+cat passwd
+vagrant halt
+vagrant status
+exit
+awp
+pwd
+ssh-keygen
+cat $HOME/.ssh/*.pub
+pwd
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:isaiasmiguelangell-pixel/TP_AySO.git
+cd TP_AySO/
+pwd
+ls -l
+cat /etc/passwd
+man grep
+grep UBUNTU /etc/passwd
+grep ubuntu /etc/passwd
+grep -i Ubuntu /etc/passwd
+grep -i ubuntu /etc/passwd | awk -F: '{print $2}' > datos_usuario.txt
+whoami
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+git add .
+git config --global user.email "isaiasmiguelangell"
+git config --global user.name "isaiasmiguelangell-pixel"
+git add .
+git status
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git add .
+git status
+git push origin main
+grep "model name" /proc/cpuinfo | head -n1 > info_pc.txt
+cat info_pc.txt
+git add info_pc.txt
+git commit -m "feat: Añadiendo información de CPU"
+git push origin main
+git status
+man grep
+man sort
+grep -v "nologin" /etc/passwd | head -n10 | sort -t: -k7 > lista_ordenada
+git add lista_ordenada
+git commit -m "ADD: Listado de usuarios ordenada"
+git push origin ma in 
+git push origin main
+cat lista_ordenada
+git log --oneline
+cat << 'EOF' >> README.md
+UTN
+Alumno: <Tu-Nombre-Y-Apellido>
+División: <Tu-División>
+Turno: <Tu-Turno>
+
+UTN
+cat << 'EOF' >> README.md
+---UTN---
+alumno: <Isaias Angel
+
+cat << 'EOF' >> README.md
+Alumno: <Isaias Angel>
+Division: <116>
+Turno: <Mañana>
+E0F
+EOF
+
+cat README.md
+cat << 'EOF' > README.md
+---UTN---
+Alumno: <Isaias Angel>
+Division: <116>
+Turno: <Mañana>
+EOF
+
+cat README.md
+git add README.md
+git commit -m "docs: agregado de datos del alumno al README"
+git push origin main
+cat << 'EOF' > README.md
+___UTN___
+Alumno: <Isaias Angel>
+Division: <116>
+Turno: <Mañana>
+EOF
+
+cat README.md
+git add README.md
+git commit -m "docs: corregir formato de datos del alumno en README"
+de datos del alumno en README
+git push origin main
+cat << 'EOF' > README.md
+___UTN___
+Alumno: Isaias Angel
+Division: <116>
+Turno: <Mañana>
+EOF
+
+git add README.md
+git commit -m "docs: agregar datos del alumno al README"
+git push origin main
+man grep
+mkdir -p $HOME/TP1/{arquitectura/Clase{1..5},so/Clase{1..6}}
+sudo apt install tree -y && tree $HOME/TP1
+cat << 'EOF' > script_dir.sh
+#!/bin/bash
+mkdir -p $HOME/TP1/{arquitectura/Clase{1..5},so/Clase{1..6}}
+EOF
+
+man grep
+pwd
+chmod +x script_dir.sh
+git add script_dir.sh
+git commit -m "ADD: Añadiendo script"
+git push origin main
+man awk
+man grep
+pwd
+man sort
+history -a
